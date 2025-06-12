@@ -4,6 +4,7 @@ const elementoParaInserirLivros = document.getElementById('livros');
 //função para exibir os livros na tela
 // e inserir no elemento HTML
 function exibirLivrosNaTela(listaDeLivros) {
+	elementoParaInserirLivros.innerHTML = ''; // Limpa o conteúdo anteriormente exibido
 	listaDeLivros.forEach(livro => {
 		elementoParaInserirLivros.innerHTML += `
 		<div class="livro">
