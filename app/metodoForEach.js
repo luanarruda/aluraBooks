@@ -1,9 +1,10 @@
 const elementoParaInserirLivros = document.getElementById('livros');
-
+const elementoComValorTotalDeLivrosDisponiveis = document.getElementById('valor_total_livros_disponiveis');
 
 //função para exibir os livros na tela
 // e inserir no elemento HTML
 function exibirLivrosNaTela(listaDeLivros) {
+	elementoComValorTotalDeLivrosDisponiveis.innerHTML = ''; // Limpa o valor total antes de exibir os livros
 	elementoParaInserirLivros.innerHTML = ''; // Limpa o conteúdo anteriormente exibido
 	listaDeLivros.forEach(livro => {
 		//funcao veridica disponibilidade
